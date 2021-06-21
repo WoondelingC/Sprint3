@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<header>
+		<div class="contenedor">
+			<h2 class="logotipo">NETNET</h2>
+			<nav>
+				<a href="index.html" class="activo">Inicio</a>
+				<a href="index.html">Películas</a>
+				<a href="index.html">Series</a>
+				<a href="index.html">Estrenos</a>
+			</nav>
+		</div>
+	</header>
+	<div class="contenedor-Formulario">
+        <div class="content">
+
+            <form action="" class="form" id="form" onsubmit="">
+                <div id="container">
+                <h2 id="formulario">Información de Pago</h2>
+                <input id="name" type="text" placeholder="Enter name" required>
+                <input id="email" type="Email" name="email" placeholder="Enter email" required>
+                <input id="numT" type="number" name="numT" placeholder="igrese el numero de tarjeta" min ="0" required>
+                <input id="fecha" type="date" name="fecha" placeholder="fecha de vencimiento" required />
+                <input id="CVV" type="number" name="CVV" placeholder="CVV" maxlength="3" required/>
+
+                <input type="submit" name="pago" value="Pagar"/>
+            
+            </div>
+            </form>
+        </div>
+    </div>
+
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="script/form.js"></script>
+	
+</body>
+
+</html>

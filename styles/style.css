@@ -1,0 +1,298 @@
+:root{
+	--rojo: rgb(201, 37, 37);
+	--negro: rgb(5, 5, 5);
+}
+.row{
+    display: flex;
+}
+img{
+    size: 200px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--negro);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 20px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	color: var(--rojo);
+	font-size: 50px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+	font-size: 18px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
+.principal {
+	font-size: 16px;
+	min-height: 48.0em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../imagenes/pelicula\ principal.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.principal .titulo {
+	font-weight: 600 ;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.principal .descripcion {
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+	text-align: justify;
+}
+
+.principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+.principal .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.principal .boton i {
+	margin-right: 15px;
+}
+
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+	color: #fff;
+	font-size: 30px;
+}
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+.peliculas-recomendadas {
+	margin-bottom: 70px;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+#flecha-izquierda,
+#flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(224, 26, 26, 0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+#lista{
+	color: white;
+}
+#total{
+	margin-top: 30px;
+    color: white;
+}
+#nombres{
+	margin-bottom: 10px;
+	font-size: 28px;
+}
+#pagar{
+	background: linear-gradient(190deg, red, #000000);
+	width: 150px;
+	height: 35px;
+	margin-left: 44%;
+	margin-top: 20px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#flecha-izquierda:hover,
+#flecha-derecha:hover {
+	background: rgba(224, 26, 26, 0.9);
+}
+
+.peliculas-recomendadas .contenedor-principal #flecha-izquierda {
+	left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal #flecha-derecha {
+	right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.peliculas-recomendadas .contenedor-lista {
+	width: 100%;
+    display: flex;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-lista .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.carousel .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.pelicula:hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+
+form, #contenedor{
+	border: 1px solid red;
+	margin: 40px 25% 20px 25%;
+	height: 400px;
+	display: block;
+	background: rgba(224, 26, 26, 50%);
+}
+#formulario{
+	align-items: center;
+	margin-left: 10%;
+	color:white;
+
+}
+input{
+	width: 98%;
+    display: block;
+    padding: 15px;
+    font-size: 20px;
+    margin-left: 9px;
+    margin-bottom: 20px;
+
+}
+#comprar{
+    background: linear-gradient(180deg, #D02525, transparent);
+            border: groove 2px #962828;
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+            margin-left: 0px;
+            color: white;
+}
+.detallesTarg{
+	color:white
+}
+#listaCompra{
+	border-radius: 20px;
+    margin-left: 38%;
+    width: 300px;
+    background: linear-gradient(207deg, #a03232d1, transparent);
+}
+.content{
+	width: 1500px;
+    margin-top: 0;
+    margin-left: -31%;
+    margin-right: 20%;
+}
+#form{
+	border: 5px solid white;
+    max-width: 50%;
+    margin-top: 30px;
+    text-align: center;
+    height: 555px;
+}
+
+
+.contenedor-Formulario{
+    width: 100%;   
+    margin-left: 25%;
+	display: block;
+
+}
+
+
+#formulario, h2{
+	margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    font-size: 24px;
+    color: white;
+}
+
+.form input[type="submit"]{
+    background: #157EFB;
+    border: none;
+}
+
+
+.form label{
+    color: var(--varLetra);
+    font-size: 18px;
+}
+
+
+
+
+

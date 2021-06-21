@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/style.css">
+	<title>Sprint3</title>
+</head>
+
+<body>
+	<header>
+		<div class="contenedor">
+			<h2 class="logotipo">NETNET</h2>
+			<nav>
+				<a href="#" class="activo">Inicio</a>
+				<a href="#nav">Películas</a>
+				<a href="#nav">Series</a>
+				<a href="#nav">Estrenos</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="principal">
+			<div class="contenedor">
+				<h3 class="titulo">Rapidos y Furiosos 9</h3>
+				<p class="descripcion">
+					Domic Toretto lleva una vida tranquila, lejos de todo, con Letty y su hijo, el pequeño Brian;
+					el peligro está siempre al acecho. Esta vez, esta amenaza obligará a Domic Toretto a enfrentarse
+					a los pecados de su pasado para salvar a los que más quiere. Su equipo se reúne de nuevo para
+					detener un plan que conmocionará al
+				</p>
+				<a href="form.html"><button role="button" class="boton"><i class="fas fa-dollar-sign"></i>Comprar</button></a>
+				<button role="button" class="boton"><i class="fas fa-info"></i>Más información</button>
+			</div>
+		</div>
+
+		<div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h3>Películas Recomendadas</h3>
+
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+				<div class="contenedor-lista" id="nav">
+					<div class="carousel">
+						
+						<div id="items" class="row"></div>
+<!--diseño donde se mostrara mi informacion de la data-->
+						<template id="template-card">
+							<div class="pelicula" id="card">
+								<img src="" alt="" id="image">
+								<input type="button" value="Comprar" id="comprar">
+							</div>
+						</template>
+						
+					</div>
+
+					<button role="button" id="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+				
+			</div></div><div id="detalle" class="detallesTarg"></div>
+			
+			<div id="listaCompra"></div>
+
+			<div id="totalCompra"></div>
+
+	</main>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="scripts/script.js" type="module"></script>
+	<script src="data/data.js" type="module"></script>
+	
+	
+</body>
+
+</html>
